@@ -5,7 +5,7 @@ namespace :scraper do
   desc "Fetch Wines from the wine API"
   task scrape: :environment do
 	require 'open-uri'
-	require 'JSON'
+	require 'json'
 
 	#http://services.wine.com/api/beta2/service.svc/JSON/catalog?filter=product&apikey=b83910c31344dbe67a1b501d8ccd5bf7
 	# Set API token and URL

@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'json'
+
 namespace :scraper do
   desc "Fetch Wines from the wine API"
   task scrape: :environment do

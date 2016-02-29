@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :api do  #create api routes
+     resources :posts
+  end
+
   resources :posts
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.

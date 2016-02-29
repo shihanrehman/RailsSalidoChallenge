@@ -33,6 +33,12 @@ class Api::PostsController < ApplicationController
 				message: "Successfully updated",
 				post: post
 			}.to_json
+		else
+			render json: {
+				status: 500,
+				message: "The post could not be updated"
+				post: post
+			}.to_json
 		end
 	end
 

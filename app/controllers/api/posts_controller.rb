@@ -29,9 +29,9 @@ class Api::PostsController < ApplicationController
 		def list_params 
 			params.require(:post).permit(:name, :price, :quantity)
 		end
-	end
-
 end
+
+
 
 #In terminal, run curl http://localhost:3000/api/posts.json
 #show, curl http://localhost:3000/api/posts/4.json

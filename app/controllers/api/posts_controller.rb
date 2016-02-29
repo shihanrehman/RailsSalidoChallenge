@@ -10,7 +10,7 @@ class Api::PostsController < ApplicationController
 	end
 
 	def create
-		post  = Post.new(list_params)  #curl -i -H "Accept: application/json" -H "Content-type:application/json" -X POST -d '{"name":"Martini"}' http://localhost:3000/api/posts
+		post  = Post.new(list_params)  #curl -i -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"name":"Martini"}' http://localhost:3000/api/posts
 		 if post.save
 		      render json: {
 		      status: 200,
@@ -26,7 +26,7 @@ class Api::PostsController < ApplicationController
 	end
 
 	def update
-		post = Post.find(params[:id])	#curl -i -H  "Content-type:application/json" -X PUT -d '{"name":"Vodka1"}' http://localhost:3000/api/posts/15.json
+		post = Post.find(params[:id])	#curl -i -H  "Accept: application/json" "Content-type: application/json" -X PUT -d '{"name":"Vodka1"}' http://localhost:3000/api/posts/15.json
 		if post.update(list_params)
 			render json: {
 				status: 200,
@@ -36,7 +36,7 @@ class Api::PostsController < ApplicationController
 		else
 			render json: {
 				status: 500,
-				message: "The post could not be updated"
+				message: "The post could not be updated",
 				post: post
 			}.to_json
 		end
@@ -44,7 +44,7 @@ class Api::PostsController < ApplicationController
 
 
 	def destroy
-		post = Post.find(params[:id])	#curl -i -H "Accept: application/json" -H "Content-type:application/json" -X DELETE -d '{"name":""}' http://localhost:3000/api/posts/12.json
+		post = Post.find(params[:id])	#curl -i -H "Accept: application/json" -H "Content-type: application/json" -X DELETE -d '{"name":""}' http://localhost:3000/api/posts/12.json
 		post.destroy
 		render json: {
 			status: 200,

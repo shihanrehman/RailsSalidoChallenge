@@ -12,6 +12,7 @@
 -The app succeessfully pulled and saved the names of the wines into the local database on the rails app with the ability to perform CRUD
 
 1/23-1/24
+
 -Configured production environment with Postgres DB and Deployed App to heroku
 
 2/27/2016

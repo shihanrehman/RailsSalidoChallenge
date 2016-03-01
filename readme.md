@@ -1,5 +1,5 @@
 1/22/2016
-Steps 1-4
+-Steps 1-4
 -Analyze Documentation from the API at Wine.com
 -Instantiate a new rails app with three database columns, :name :quantity :price
  a. The "name" column in the database will be populated by the "name" key from the JSON API 
@@ -16,7 +16,7 @@ Steps 1-4
 -Configured production environment with Postgres DB and Deployed App to heroku
 
 2/27/2016
-Step 5
+-Step 5
 -Built a custom API and the user has the ability to update existing products in Salido'S DB using the API via the curl command in terminal.
 
 2/28/2016

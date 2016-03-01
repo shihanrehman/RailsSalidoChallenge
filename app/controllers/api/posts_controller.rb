@@ -26,7 +26,7 @@ class Api::PostsController < ApplicationController
 	end
 
 	def update
-		post = Post.find(params[:id])	#curl -i -H  "Accept: application/json" "Content-type: application/json" -X PUT -d '{"name":"Vodka1"}' http://localhost:3000/api/posts/15.json
+		post = Post.find(params[:id])	#curl -i -H  "Accept: application/json" -H "Content-type: application/json" -X PUT -d '{"name":"Vodka1"}' http://localhost:3000/api/posts/15.json
 		if post.update(list_params)
 			render json: {
 				status: 200,

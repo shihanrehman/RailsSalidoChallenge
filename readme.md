@@ -10,3 +10,11 @@
 -Ran "rake scraper:scrape" in the terminal
 -Ran "rails s" in the terminal
 -The app succeessfully pulled and saved the names of the wines into the local database on the rails app with the ability to perform CRUD
+
+2/27/2016
+
+-Built a custom API and the user has the ability to update existing products in Salido'S DB using the API via the curl command in terminal.
+
+2/28/2016
+
+-In Progress (Developing Rspec script to test API calls)

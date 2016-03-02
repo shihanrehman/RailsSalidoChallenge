@@ -6,7 +6,7 @@ class Api::PostsController < ApplicationController
 
 	def show
 		post = Post.find(params[:id])
-		render json: post #curl http://localhost:3000/api/psons/1.json
+		render json: post #curl http://localhost:3000/api/posts/1.json
 	end
 
 	def create

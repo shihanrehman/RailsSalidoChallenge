@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
 	skip_before_filter :verify_authenticity_token
 	def index
-		render json: Post.all  #curl localhost:3000/api/posts.json
+		render json: Post.all  #curl localhost:3000/api/posts.json, this is used to see all the posts get method
 	end
 
 	def show

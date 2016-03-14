@@ -19,4 +19,4 @@
 
 2/28/2016 - Step 6
 -In Progress (Developing Rspec script to test API calls)
--Steps 1-5 completed of Rails Salido Challenge
+-Steps 1-5 complete of Rails Salido Challenge
